@@ -83,7 +83,7 @@ def main(fileIn):
             for line in new_md5:
                 f.write(line)
 
-        os.system('md5sum -c md5-check.txt') #checksum the downloaded tiffs
+        os.system('md5sum -c md5-check.txt > checksum_results.txt') #checksum the downloaded tiffs
                 
 
          
